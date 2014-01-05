@@ -1,2 +1,4 @@
 *.sw?
+# Ignore .bundle directory with line below.
 .bundle
+*.db
