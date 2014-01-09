@@ -1,3 +1,13 @@
+Vim:
+gg - go to the beginning of the file
+G - go to the end of the file
+Shift V - enter Visual mode by line
+A - go to the end of the line in insert mode
+o - go to the next line in insert mode
+I - go to the beginning of the line in insert mode
+
+
+
 Stacks for thienscorner's project:
 SQ Lite - database
 Sequel - Ruby Library to interact with SQlite
@@ -20,6 +30,12 @@ Template languages: Angular JS, ERB (for Rails) - Allow user to inject dynamic d
 ***To install Ruby things, use Rbenv and Bundler.  Ruby Environment allows user to specify a certain version of ruby for the project.  Bundler allows user to install Ruby libraries (aka Gems) to your ruby version.
 
 Gemfile:  will allow you to keep a list of gem you use.
+
+Set tab to 2 spaces:
+	Enable filetype plugin in vimrc
+	create ftplugin directory
+	create ruby.vim or html.vim inside ftplugin
+	set specifics for ruby or html files
 
 01-04-14
 Eventually, we must find a way to create/read/update/delete (CRUD) recipe/repices.  We started a page for reading one recipe. We can try to create in the database a table to store recipes and insert the data for our one recipe.
@@ -51,3 +67,16 @@ camelCase:  a naming convention in which a name is formed of multiple words that
 Questions:  How to detele one letter using vim?  How to go to a line?
 bootstrap:  In computing, a bootstrap loader is the first piece of code that runs when a machine starts, and is responsible for loading the rest of the operating system.
 DOM = Document Object Model - is an application programming interface (API) for documents.  It defines the logical structure of documents and the way a document is accessed and manipulate (build, navigate, add, modify, delete, etc).
+
+How to copy files from a directory to another directory: 
+cp -a angular-seed/* thienscorner
+(-a) copy recursively preserving file attribute (if you don't copy recursively, it will copy only one level, and it will fail when it hits a non-empty directory)
+/* pretents to copy everything inside angular-seed
+
+Directory - relative
+cd .. #go up a directory
+cd ../.vim #go to a sibling directory (has same parent), relative
+
+Add/Remove remote
+git remote add origin url
+git remote remove origin
